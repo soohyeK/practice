@@ -1,0 +1,13 @@
+package com.join.service;
+
+import com.join.domain.MemberVO;
+
+public interface JoinService {
+
+	//?šŒ?›ê°??…
+	public void memberJoin(MemberVO member) throws Exception;
+	
+	//?•„?´?”” ì¤‘ë³µ ê²??‚¬
+	public int idCheck(String memberId) throws Exception;
+		
+}

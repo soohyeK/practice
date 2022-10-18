@@ -1,0 +1,29 @@
+package com.join.domain;
+
+import java.util.Date;
+import java.util.List;
+import lombok.Data;
+
+
+@Data
+public class JoinVO {
+
+	private JoinVO() {
+		
+	}
+	
+	private String memberId;
+	private String memberPw;
+	private String memberName;
+	private Date memberBirth;
+	private String memberEmail;
+	private String memberAdd1;
+	private String memberAdd2;
+	private String tel;
+	private Date withdrawlDate;
+	private List<JoinVO> smemberVO;
+	public int getAdminCk() {
+		
+		return 0;
+	}
+}

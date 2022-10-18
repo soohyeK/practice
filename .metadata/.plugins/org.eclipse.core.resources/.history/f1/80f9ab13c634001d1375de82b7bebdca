@@ -1,0 +1,18 @@
+package com.join.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.join.domain.CriteriaNotice;
+import com.join.domain.ShopBoardVO;
+
+
+public interface NoticeMemService {
+
+	public ShopBoardVO get(long boardId);
+	
+	public int getTotal(CriteriaNotice criNo);
+	
+	public List<ShopBoardVO> getList(CriteriaNotice criNo);
+}

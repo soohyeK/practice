@@ -1,0 +1,29 @@
+package org.paldo.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.join.domain.ShopProductDetailVO;
+import com.join.domain.ShopProductVO;
+import com.join.mapper.ProductViewMapper;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class ProductViewServicempl implements ProductViewService {
+
+	private ProductViewMapper mapper;
+	
+	@Override
+	public List<ShopProductVO> getList() {
+		// TODO Auto-generated method stub
+		return mapper.getList();
+	}
+	@Override
+	public ShopProductDetailVO getProduct(int productId) {
+		return mapper.getProduct(productId);
+	}
+
+}

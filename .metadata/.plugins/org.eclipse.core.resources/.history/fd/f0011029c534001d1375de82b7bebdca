@@ -1,0 +1,23 @@
+package com.join.controller;
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+
+@Controller
+@RequestMapping(value = "/join")
+public class JoinController {
+	
+	
+	
+	//
+	@RequestMapping(value = "join", method = RequestMethod.GET)
+	public void joinGET() {
+		
+		log.info("?쉶?썝媛??엯 ?럹?씠吏?濡?");
+		
+	}
+	
+}

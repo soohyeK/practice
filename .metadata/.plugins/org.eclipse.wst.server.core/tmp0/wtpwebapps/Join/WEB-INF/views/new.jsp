@@ -1,0 +1,113 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+	$(function(){
+		
+		$("#all").click(function(){
+			
+			if($("#all").is(":checked")){
+// 				$("[name=chk]").attr("checked","checked");
+				
+				
+				var txt = "";
+				$("[name=chk]").each(function(){
+					if($(this).prop("checked")==false){
+						txt += $(this).val();
+					}
+				})
+				$("#dvTxt").append(txt);
+				
+				$("[name=chk]").prop("checked",true);
+				
+			}else{
+// 				$("[name=chk]").removeAttr("checked");
+				$("[name=chk]").prop("checked",false);
+				$("#dvTxt").text("");
+			}
+// 			.attr()
+// 			.prop()
+			
+// 			$("#txt").attr("class", "cls");
+			
+			
+			
+		})
+		
+		$("#btn").click(function(){
+			var checked = $("[name=chk]:checked").length;
+			
+			if(checked == 0){
+				alert("항목 선택");
+			}else if(checked <= 4 || $("#all").is(":checked")){
+				alert("성공");
+			}else{
+				alert("실패");
+			}
+		})
+		
+//		$("#aa").click(function(){
+			
+//			$("#dvHTML").append("<input type=file>");
+			
+// 			.html, .append,     .innerHTML
+			
+//		})
+		
+		
+		
+	})
+	
+	
+	function goCheck(chk){
+		var checkbox = $("[name=chk]").length;
+		var checked = $("[name=chk]:checked").length;
+		
+		
+		
+		if(checkbox == checked){
+			$("#all").prop("checked",true);
+		}else{
+			$("#all").prop("checked",false);
+		}
+		
+		
+		
+		
+		if($(chk).is(":checked")){
+			$("#dvTxt").append($(chk).val());
+		}else{
+			$("#dvTxt").text( $("#dvTxt").text().replace($(chk).val(), "") ); 
+		}
+	}
+	
+</script>
+<style>
+	.cls{
+		font-size: 100px
+	}
+</style>
+</head>
+<body>
+	<input type = "button" name = "aa" id = "aa" value = "테스트">
+	<div id="dvHTML"></div>
+	
+	<div>
+		<input type = "checkbox" name = "all" id = "all"><label for = "all">전체</label>
+		<input type = "button" name = "btn" id = "btn" value = "버튼">
+	</div>
+	<div>
+		<c:forEach begin="1" end = "9" var = "i" varStatus="num">
+			<input type = "checkbox" name = "chk" id = "chk${num.index}" value = "체크${i}" onclick = "goCheck(this)"><label for = "chk${num.index}">체크${i }</label>
+		</c:forEach>
+	</div>
+	<div id = "dvTxt"></div>
+
+</body>
+</html>

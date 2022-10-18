@@ -1,0 +1,70 @@
+1663225412678	Delete element
+1663225502422	Move compilation unit
+1663225518646	Delete element
+1663225741856	Delete element
+1663225748990	Delete element
+1663225772219	Delete elements
+1663225804219	Rename package 'org.paldo.domain'
+1663225859702	Delete element
+1663225866241	Delete element
+1663225871716	Delete element
+1663225883340	Delete element
+1663225886265	Delete element
+1663225900341	Delete element
+1663225903028	Delete element
+1663225906334	Delete element
+1663225908881	Delete element
+1663225911354	Delete element
+1663225913538	Delete element
+1663225933297	Rename package 'org.paldo.mapper'
+1663225955442	Rename package 'org.paldo.service'
+1663226068127	Delete element
+1663226071150	Delete element
+1663226073909	Delete element
+1663226076447	Delete element
+1663226079490	Delete element
+1663226082302	Delete element
+1663226085666	Delete element
+1663226088260	Delete element
+1663226091147	Delete element
+1663226099066	Delete element
+1663226102238	Delete element
+1663226111961	Delete element
+1663226115339	Delete element
+1663226117898	Delete element
+1663226119621	Delete element
+1663226123034	Delete element
+1663226245962	Rename type 'MemberMapper'
+1663226284334	Rename type 'ShopMemberVO'
+1663226308158	Delete element
+1663226370020	Delete element
+1663226373932	Delete element
+1663226419095	Move file
+1663226457065	Delete element
+1663226530562	Move file
+1663226534091	Delete element
+1663226628123	Delete element
+1663226635803	Delete element
+1663226668769	Delete element
+1663226671554	Delete element
+1663226703643	Delete element
+1663226706450	Delete element
+1663226720552	Delete element
+1663226726560	Delete element
+1663226729226	Delete element
+1663226731872	Delete element
+1663226735038	Move 'join.jsp' to 'views'
+1663226737076	Delete element
+1663226739719	Delete element
+1663226744608	Delete element
+1663226747299	Delete element
+1663226750464	Delete element
+1663226753720	Delete element
+1663227825370	Rename type 'MemberService'
+1663227835155	Rename compilation unit 'MemberServicempl.java'
+1663228075536	Delete element
+1663228078243	Delete element
+1663228080609	Delete element
+1663228085997	Delete element
+1663228108225	Delete element
+1663301602854	Rename type 'MemberVO'

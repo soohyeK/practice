@@ -1,0 +1,8 @@
+package com.join.service;
+
+import com.join.domain.ShopAdminVO;
+
+public interface AdminService {
+
+	public ShopAdminVO adminLogin(ShopAdminVO admin) throws Exception;
+}

@@ -1,0 +1,34 @@
+package com.join.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.join.domain.ShopMemberVO;
+import com.join.mapper.JoinMapper;
+
+import lombok.AllArgsConstructor;
+
+	@Service
+	@AllArgsConstructor
+	public class JoinServicempl implements JoinService{
+
+		@Autowired
+		JoinMapper joinmapper;
+		
+
+	    //회원가입
+		@Override
+		public void memberJoin(MemberVO member) throws Exception {
+			
+			joinmapper.memberJoin(member);
+			
+		}
+		
+		//아이디 중복 검사
+		@Override
+		public int idCheck(String memberId) throws Exception {
+			
+			return joinmapper.idCheck(memberId);
+		}
+
+}

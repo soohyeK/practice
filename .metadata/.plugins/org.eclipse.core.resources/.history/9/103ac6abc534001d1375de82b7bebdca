@@ -1,0 +1,14 @@
+package org.paldo.mapper;
+
+import java.util.List;
+
+import com.join.domain.ShopProductDetailVO;
+import com.join.domain.ShopProductVO;
+
+public interface ProductViewMapper {
+
+	public List<ShopProductVO> getList();
+	
+	public ShopProductDetailVO getProduct(int productId); 
+	
+}
